@@ -17,17 +17,17 @@
             <form>
                 <h4>Значение по оси OX</h4>
                 <p>
-                    <label><input type="radio" name="ox" value="region"> Регион</label><br>
-                    <label><input type="radio" name="ox" value="status"> Статус</label><br>
-                    <label><input type="radio" name="ox" value="eu"> Членство в ЕС</label><br>
-                    <label><input type="radio" name="ox" value="euro"> Евро</label><br>
+                    <label><input type="radio" id="ox" name="ox" value="region"> Регион</label><br>
+                    <label><input type="radio" id="ox" name="ox" value="status"> Статус</label><br>
+                    <label><input type="radio" id="ox" name="ox" value="eu"> Членство в ЕС</label><br>
+                    <label><input type="radio" id="ox" name="ox" value="euro"> Евро</label><br>
                 </p>
                 <h4>Значение по оси OY</h4>
                 <p>
-                    <label><input type="checkbox" name="oy" value="maxpop"> Максимальное население</label><br>
-                    <label><input type="checkbox" name="oy" value="minpop"> Минимальное население</label><br>
-                    <label><input type="checkbox" name="oy" value="count"> Количество стран</label><br>
-                    <label><input type="checkbox" name="oy" value="area"> Суммарная площадь</label><br>
+                    <label><input type="checkbox" id="oy" name="oy" value="maxpop"> Максимальное население</label><br>
+                    <label><input type="checkbox" id="oy" name="oy" value="minpop"> Минимальное население</label><br>
+                    <label><input type="checkbox" id="oy" name="oy" value="count"> Количество стран</label><br>
+                    <label><input type="checkbox" id="oy" name="oy" value="area"> Суммарная площадь</label><br>
                 </p>
                 <p><input type="submit" value="Построить"></p>
             </form>
@@ -36,12 +36,12 @@
         <details open>
             <summary>Фильтр</summary>
             <form>
-                <p><label>Название: <input type="text" name="name"></label></p>
-                <p><label>Столица: <input type="text" name="capital"></label></p>
-                <p><label>Регион: <input type="text" name="region"></label></p>
-                <p><label>Статус: <input type="text" name="status"></label></p>
-                <p>Население, тыс. чел.: <label>от <input type="number" name="pop_min" min="0" step="any"></label> <label>до <input type="number" name="pop_max" min="0" step="any"></label></p>
-                <p>Площадь, км<sup>2</sup>: <label>от <input type="number" name="area_min" min="0" step="any"></label> <label>до <input type="number" name="area_max" min="0" step="any"></label></p>
+                <p><label>Название: <input type="text" id="name" name="name"></label></p>
+                <p><label>Столица: <input type="text" id="capital" name="capital"></label></p>
+                <p><label>Регион: <input type="text" id="region" name="region"></label></p>
+                <p><label>Статус: <input type="text" id="status" name="status"></label></p>
+                <p>Население, тыс. чел.: <label>от <input type="number" id="pop_min" name="pop_min" min="0" step="any"></label> <label>до <input type="number" id="pop_max" name="pop_max" min="0" step="any"></label></p>
+                <p>Площадь, км<sup>2</sup>: <label>от <input type="number" id="area_min" name="area_min" min="0" step="any"></label> <label>до <input type="number" id="area_max" name="area_max" min="0" step="any"></label></p>
                 <p><input type="submit" value="Найти"></p>
             </form>
         </details>
@@ -57,7 +57,7 @@
                     <option value="population">Население</option>
                     <option value="area">Площадь</option>
                     <option value="density">Плотность</option>
-                </select></label> <label>по убыванию? <input type="checkbox" name="desc1" value="1"></label></p>
+                </select></label> <label>по убыванию? <input type="checkbox" id="desc1" name="desc1" value="1"></label></p>
                 <p><label>Второй уровень: <select name="sort2">
                     <option value="">Нет</option>
                     <option value="name">Название</option>
@@ -67,7 +67,7 @@
                     <option value="population">Население</option>
                     <option value="area">Площадь</option>
                     <option value="density">Плотность</option>
-                </select></label> <label>по убыванию? <input type="checkbox" name="desc2" value="1"></label></p>
+                </select></label> <label>по убыванию? <input type="checkbox" id="desc2" name="desc2" value="1"></label></p>
                     <p><label>Третий уровень: <select name="sort3">
                     <option value="">Нет</option>
                     <option value="name">Название</option>
@@ -77,7 +77,7 @@
                     <option value="population">Население</option>
                     <option value="area">Площадь</option>
                     <option value="density">Плотность</option>
-                </select></label> <label>по убыванию? <input type="checkbox" name="desc3" value="1"></label></p>
+                </select></label> <label>по убыванию? <input type="checkbox" id="desc3" name="desc3" value="1"></label></p>
                 <p><input type="submit" value="Сортировать"></p>
             </form>
         </details>
