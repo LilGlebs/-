@@ -1,0 +1,127 @@
+html {
+    font-size: 0.8333vw;
+}
+body {
+    margin: 0;
+}
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+nav {
+    background: #333333;
+    text-align: center;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li {
+    display: inline-block;
+}
+nav a {
+    display: block;
+    padding: 1rem;
+    color: #fff;
+    text-decoration: none;
+}
+nav .active a {
+    background: #04aa6d;
+}а
+
+.page {
+    width: 90%;
+    margin: 0 auto;
+}
+.banner {
+    margin-bottom: 1rem;
+}
+
+.left, .right, .half, .side, .main, .cols > * {
+    display: inline-block;
+    vertical-align: top;
+}
+.left {
+    width: 33.33%;
+}
+.right {
+    width: 66.67%;
+}
+.half {
+    width: 50%;
+}
+.side {
+    width: 11.6%;
+    text-align: center;
+}
+.main {
+    width: 76.8%;
+}
+.item {
+    margin-bottom: 1.5rem;
+}
+.item img {
+    width: 42%;
+    margin: 0 auto;
+    border: 1px solid gray;
+}
+.item b {
+    display: block;
+}
+article {
+    border: 1px solid gray;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+article h1 {
+    text-align: center;
+    font-size: 1.1rem;
+}
+.cols p {
+    margin: 0 0 0.5rem;
+}
+.w24 {
+    width: 23.6%;
+}
+.w47 {
+    width: 47.4%;
+    margin: 0 2.6%;
+}
+.w73 {
+    width: 73%;
+    margin-right: 2.7%;
+}
+.w24b {
+    width: 24.3%;
+}
+.right-align {
+    text-align: right;
+}
+.btn {
+    background: #2196f3;
+    color: #ffffff;
+    padding: 0.2rem 0.5rem;
+    text-decoration: none;
+}
+footer {
+    background: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
